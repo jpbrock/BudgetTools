@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BudgetCenter.Model
 {
-    public class Budget
+    public class Budget 
     {
         private string directory;
         private List<BudgetCategory> categories;

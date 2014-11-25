@@ -23,6 +23,8 @@ namespace BudgetCenter
         public MainWindow()
         {
             InitializeComponent();
+          
         }
+
     }
 }
