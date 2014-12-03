@@ -24,13 +24,33 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Add Reciept">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <ComboBox x:Name="RecieptBudgetCategory" HorizontalAlignment="Left" Margin="110,43,0,0" VerticalAlignment="Top" Width="179"  ItemsSource="{Binding Path=BudgetCategories}" SelectedIndex="{Binding Path=SelectedCategory}">
+
+                    </ComboBox>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,43,0,0" TextWrapping="Wrap" Text="Budget Category: " VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,81,0,0" TextWrapping="Wrap" Text="Company: " VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,113,0,0" TextWrapping="Wrap" Text="Amount:" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,149,0,0" TextWrapping="Wrap" Text="Date:" VerticalAlignment="Top"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="110,146,0,0" VerticalAlignment="Top" SelectedDate="{Binding Path=RecieptDate}" />
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="110,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="340"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="110,112,0,0" TextWrapping="Wrap" TextAlignment="Right" Text="0.00" VerticalAlignment="Top" Width="102"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,189,0,0" TextWrapping="Wrap" Text="Tags:" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="110,182,0,0" TextWrapping="Wrap" Text="{Binding Path=Tags, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
+
+
+                </Grid>
             </TabItem>
             <TabItem Header="Paychecks">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
             <TabItem Header="Edit Budget">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="49*"/>
+                        <ColumnDefinition Width="254*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
             </TabItem>
         </TabControl>
 

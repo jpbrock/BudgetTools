@@ -13,5 +13,10 @@ namespace BudgetCenter.Model
         private List<Paycheck> paychecks;
         private List<Expense> expenses;
         private List<Deposit> deposits;
+
+
+
+
+        
     }
 }
